@@ -1,0 +1,7 @@
+(1)Data is encapsulated within fcn , in procedural data is separated from fcn.
+(2)Data Security
+(3)Inheritance increases resubility
+(4)Data Security
+(5)User Defined data type
+
+

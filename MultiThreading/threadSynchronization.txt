@@ -1,0 +1,2 @@
+(1)Mutual Exclusive
+(2)Inter thread communication   

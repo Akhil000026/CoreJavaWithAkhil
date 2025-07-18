@@ -1,0 +1,39 @@
+| Method                              | How                                                       |
+| ----------------------------------- | --------------------------------------------------------- |
+| **1. Extend Thread class**          | Make your class a subclass of `Thread`                    |
+| **2. Implement Runnable interface** | Write a `run()` method in a class implementing `Runnable` |
+
+
+Lifecycle of Thread:
+
+New → Runnable → Running → Blocked/Waiting → Terminated
+
+| State               | Meaning                                                        |
+| ------------------- | -------------------------------------------------------------- |
+| **New**             | Thread object created, but not started yet                     |
+| **Runnable**        | Ready to run                                                   |
+| **Running**         | Currently executing                                            |
+| **Blocked/Waiting** | Waiting for resources, sleeping, or waiting for another thread |
+| **Terminated**      | Finished execution                                             |
+
+Each java program has MAIN Thread
+Apart from main thread we can also create thread known as CHILD THREAD 
+
+/// RUN and START METHODS OF THREAD 
+
+
+thread PRIORITY
+
+PRIORITY RANGE( 1 TO 10)
+Thread.MinPriorit(1)
+Thread.MaxPriority(10)
+Thread.NORMPriority(5)
+t1.getPriority-> to find priority of thread
+t1.setPriority(8);
+
+
+// Our Prioroty-> Suggestion not necessary thread to follow 
+depends are jvm
+
+(1)Priority Inheritance-> inherit priority of parent
+(2)Starvation -> Thread with lower property may suffer from Starvation

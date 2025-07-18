@@ -1,0 +1,7 @@
+(1)COMPILATION
+-> terminal : javac filename.java 
+  compile code if correct then -> create a .class file.
+
+(2)RUNNING  
+-> terminal : java filename (not .java)
+   runs the code 

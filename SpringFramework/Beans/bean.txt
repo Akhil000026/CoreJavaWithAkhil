@@ -1,0 +1,41 @@
+ 
+A bean is simply a Java object managed by the Spring IoC container.
+
+It’s an ordinary class → but Spring creates, configures, and manages its lifecycle.
+
+Beans are defined:
+(1)via XML
+(2)via Java configuration
+(3)via annotations
+
+(1)
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="com.example.Car"/>
+</beans>
+
+(2)
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+    @Bean
+    public Car car() {
+        return new Car();
+    }
+}
+(3)
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car {
+    public void drive() {
+        System.out.println("Car is driving...");
+    }
+}
+
+

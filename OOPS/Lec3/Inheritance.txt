@@ -1,0 +1,9 @@
+(1)Can constructor be inherited in java?
+Ans: No
+Cn be by super keyword
+(2) If both parent and child class have same method which will execute?
+Ans:Child class method -> Runtime Polymorphism
+(3) Can child class access private member of parent class
+Ans:No
+(4) Can we inherit final class
+Ans : No

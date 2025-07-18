@@ -1,0 +1,39 @@
+                       Units of Memory
+
+The first memory location in a computer is bit.
+Represents binary values 0 and 1.
+
+The fundamental unit used to measure data is the byte.
+It has 8 bits in it. A byte can therefore represent 2 * 8 or 256 values.
+
+              1byte=8 bit
+
+1. boolean Data Type
+The boolean data type represents a logical value that can be either true or false.
+ Conceptually, it represents a single bit of information, but the actual size 
+ used by the virtual machine is implementation-dependent and typically at 
+ least one byte (eight bits) in practice
+
+2.. byte Data Type
+The byte data type is an 8-bit signed two’s complement integer. 
+The byte data type is useful for saving memory in large arrays.
+
+3. short Data Type
+The short data type is a 16-bit signed two’s complement integer.
+Similar to byte, a short is used when memory savings matter,
+especially in large arrays where space is constrained.
+
+
+                 
+                 byte = 1 Bytes
+                 short=char=2 Bytes
+                 int=float= 4 Bytes
+                 long=double=8 Bytes
+
+                 
+
+#float                 v/s                  double 
+Precision	    ~6-7 decimal digits	        ~15-16 decimal digits
+Default Type	No (you must use f suffix)	Yes (default for decimal numbers)
+
+

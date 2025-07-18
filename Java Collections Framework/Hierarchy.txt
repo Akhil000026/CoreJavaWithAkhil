@@ -1,0 +1,55 @@
+             
+             "JAVA COLLECTION FRAMEWORK"
+
+Any group of individual objects that are represented as a single unit
+is known as a Java Collection of Objects. In Java, a separate framework 
+named the "Collection Framework" has been defined in JDK 1.2 which holds 
+all the Java Collection Classes and Interface in it. 
+
+In Java, the Collection interface (java.util.Collection)
+ and Map interface (java.util.Map) are the two main “root” interfaces
+  of Java collection classes.
+
+#Framework:A framework is a set of classes and interfaces which provide a ready-made architecture. 
+
+        java.util.Collection (interface)
+        ├── List (interface)
+        │   ├── ArrayList
+        │   ├── LinkedList
+        │   └── Vector
+        ├── Set (interface)
+        │   ├── HashSet
+        │   ├── LinkedHashSet
+        │   └── TreeSet
+        └── Queue (interface)
+            ├── PriorityQueue
+            └── ArrayDeque
+
+    java.util.Map (interface) — Not part of Collection, but part of JCF
+    ├── HashMap
+    ├── LinkedHashMap
+    └── TreeMap
+
+
+                           Iterable (interface)
+                                 ↑
+                           Collection (interface)
+            ┌────────────────────┼────────────────────┐
+         List                 Set                  Queue
+         ↑                     ↑                      ↑
+ArrayList, LinkedList   HashSet, TreeSet      PriorityQueue, Deque
+
+
+                           Map (interface)
+                                  ↑
+                        HashMap, TreeMap, LinkedHashMap, Hashtable
+
+Methods() in Collection Interface: add(), remove(), iterator(), size(), clear()
+
+boolean add(E e);             // Add element
+boolean remove(Object o);     // Remove element
+boolean contains(Object o);   // Check existence
+int     size();                   // Number of elements
+boolean isEmpty();            // Is empty?
+void    clear();                 // Remove all
+Object[] toArray();           // Convert to array

@@ -1,0 +1,53 @@
+            Throwable
+           /         \
+      Error         Exception
+                     /      \
+        RuntimeException   (Checked exceptions)
+
+
+
+
+|   Type        |   Description                                                                                                                           | **Should You Handle It?** |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+|   Exception   | Problems that a program **can handle and recover from.** E.g. invalid input, missing files, network issues.                                | Yes                       |
+|   Error       | Serious problems the program **cannot handle.** E.g. OutOfMemoryError, StackOverflowError. Mostly caused by JVM failures or system issues. | No                        |
+
+(1) try
+(2) catch
+(3) finally
+(4) throw
+(5) throws
+
+✅ Checked Exceptions
+Must be handled or declared.
+Checked at  compile time 
+Compiler checks them.
+
+Examples:
+
+->IOException → File or I/O issues
+->SQLException → Database errors
+->ClassNotFoundException → Missing class at runtime
+->FileNotFound
+
+
+✅ Unchecked Exceptions
+Don’t need to be handled.
+Caused by bugs in code.
+
+Subclasses of RuntimeException.
+
+Examples:
+
+->ArithmeticException → Divide by zero
+->NullPointerException → Null used
+->ArrayIndexOutOfBoundsException → Invalid array index
+->NumberFormatException → Bad number format
+
+✅ Errors
+Serious problems you shouldn’t handle.
+
+Examples:
+
+->OutOfMemoryError
+->StackOverflowError

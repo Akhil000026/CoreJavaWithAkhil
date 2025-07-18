@@ -1,0 +1,27 @@
+(1)Sequence o data
+(2) Data can be of two type :
+(a)Bytes  (b)character
+(3)Java perform I/O through stream
+
+Inside java.IOException
+
+| Type                  | For                               |
+| --------------------- | --------------------------------- |
+| **Byte Streams**      | Binary data (images, audio, etc.) |
+| **Character Streams** | Text data (letters, symbols)      |
+
+(1)Byte Stream
+Use to handel 8 bit binary data.
+
+->InputStream
+Read data from a source
+FileInputStream fis= new FileInputStream("filename");
+->OutputStream
+FileOutputStream fos= new FileOutputStream("filename");
+
+(2)Character Stream
+->Reader
+->Writer
+
+
+

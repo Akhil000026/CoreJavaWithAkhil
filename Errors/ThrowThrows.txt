@@ -1,0 +1,8 @@
+| **Feature**              | **throw**                                                          | **throws**                                                  |
+| ------------------------ | ------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **Purpose**              | Used to **actually create and throw** an exception.                | Used to **declare** that a method might throw an exception. |
+| **Placement**            | Inside the method body.                                            | In the method signature.                                    |
+| **Number of Exceptions** | Can only throw **one exception** at a time.                        | Can declare **multiple exceptions** separated by commas.    |
+| **Syntax**               | `throw new ExceptionType("message");`                              | `methodName() throws ExceptionType1, ExceptionType2`        |
+| **Who handles it?**      | Either the same method catches it, or it propagates to the caller. | Caller method must handle or declare it.                    |
+| **Checked or Unchecked** | Used for both checked and unchecked exceptions.                    | Mostly used for checked exceptions.                         |

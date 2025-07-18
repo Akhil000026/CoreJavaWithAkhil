@@ -1,0 +1,23 @@
+ar is not a keyword → it’s a reserved type name.
+
+The type is determined at compile time.
+
+Once inferred, it’s fixed → var is not dynamic typing.
+
+✅ Rules
+✅ Works only for local variables, like:
+
+Variables in methods
+
+For-loop indices
+
+Try-with-resources
+
+✅ NOT allowed for:
+
+Fields
+
+Method parameters
+
+Method return types
+

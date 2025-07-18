@@ -1,0 +1,21 @@
+An array of Object type is used in the CustomGenArrayList class because
+ Java's generics are implemented using type erasure. 
+ This means that at runtime, the generic type T is replaced 
+ with Object. Here's why this approach is necessary:
+
+Generic Type Limitation: Java does not allow the creation of arrays
+ with a generic type directly (e.g., T[] data = new T[DEFAULT_SIZE];)
+ . This is because the type information for T is erased at runtime, 
+ and the JVM cannot determine the actual type of T.
+
+Object as a Common Superclass: Since all classes in Java inherit from
+ Object, an array of Object can store any type of data. This makes it
+  a suitable choice for implementing a generic data structure like
+   CustomGenArrayList.
+
+Type Casting: When retrieving elements from the Object array,
+ they are cast back to the generic type T. This ensures type safety
+  at compile time, even though the underlying array is of type Object.
+
+In summary, the Object array serves as a workaround to implement a 
+generic array while adhering to Java's type erasure constraints.

@@ -1,0 +1,8 @@
+It provides methods to get details about what went wrong:
+
+| Method              | Purpose                                           |
+| ------------------- | ------------------------------------------------- |
+| `getMessage()`      | Returns the message describing the problem.       |
+| `toString()`        | Returns a string with the class name and message. |
+| `printStackTrace()` | Prints the error stack trace.                     |
+| `getCause()`        | Returns the original cause if one exists.         |

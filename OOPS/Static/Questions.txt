@@ -1,0 +1,30 @@
+Q1. Can we access static variables via object references?
+Answer: Yes, but it’s not recommended.
+
+ Q2. Can static variables be private?
+Answer: Yes! Static variables can have any access modifier: private, public, protected.
+
+ Q3. If you create multiple objects of a class, how many copies of static variables exist?
+Answer: Only one copy in memory, shared by all objects.
+
+Q4. Can a static method directly access instance variables?
+Answer: No
+
+Q5. Can we declare a static variable inside a method?
+Answer: No.
+In Java, you cannot declare local variables as static. Static variables can only be at the class level.
+
+ Q7. Can you overload static methods?
+Answer: Yes!
+
+Q8. Can you override static methods?
+Answer: No. Static methods cannot be overridden.
+
+ Q9. Can a class be static?
+Answer: Only nested classes can be static. Top-level classes cannot be declared static.
+->The keyword static means “belongs to a class, not to instances.”
+->A top-level class (i.e. not nested inside any other class) doesn’t belong to any class—it belongs to the package.
+
+Q10. What happens if you declare a static variable as final?
+Answer: It becomes a constant. The value cannot change after initialization.
+

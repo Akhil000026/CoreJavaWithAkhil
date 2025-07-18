@@ -1,0 +1,61 @@
+Types of Operators in Java
+
+9 OPERATORS IN JAVA=A,C,A,L,U,Ternary,Bitwise,Shift,instance of operator
+
+Arithmetic Operator: +,-,*,/,%
+Unary Operators: ++,--,!,-,+(INdicate +ve value)
+Assignment Operator: +=,-=,/=,*=,%=
+Relational Operators: <,<=,>,>=,==,!=
+Logical Operators :&&,||,!
+Ternary Operator: condition ? true: false
+Bitwise Operators:&,|,~,^
+Shift Operators:<<,>>
+instance of operator: 
+
+# Unary Operators
+Unary Operators need only one operand. They are used to increment, decrement, or negate a value. 
+
+- , Negates the value.
++ , Indicates a positive value (automatically converts byte, char, or short to int).
+++ , Increments by 1.
+Post-Increment: Uses value first, then increments.
+Pre-Increment: Increments first, then uses value.
+-- , Decrements by 1.
+Post-Decrement: Uses value first, then decrements.
+Pre-Decrement: Decrements first, then uses value.
+! , Inverts a boolean value.
+
+5. Logical Operators
+Logical Operators are used to perform “logical AND” and “logical OR” 
+operations, similar to AND gate and OR gate in digital electronics.
+ They have a short-circuiting effect, meaning the second condition is not evaluated if the first is false.
+
+Conditional operators are:
+
+&&, Logical AND: returns true when both conditions are true.
+||, Logical OR: returns true if at least one condition is true.
+!, Logical NOT: returns true when a condition is false and vice-versa
+
+
+7. Bitwise Operators
+Bitwise Operators are used to perform the manipulation of individual 
+bits of a number and with any of the integer types. They are used when 
+performing update and query operations of the Binary indexed trees. 
+& (Bitwise AND): returns bit-by-bit AND of input values.
+| (Bitwise OR): returns bit-by-bit OR of input values.
+^ (Bitwise XOR): returns bit-by-bit XOR of input values.
+~ (Bitwise Complement): inverts all bits (one’s complement).
+
+
+. Shift Operators
+<< (Left shift): Shifts bits left, filling 0s (multiplies by a power of two).
+>> (Signed right shift): Shifts bits right, filling 0s (divides by a power of two), with the leftmost bit depending on the sign.
+>>> (Unsigned right shift): Shifts bits right, filling 0s, with the leftmost bit always 0.
+
+
+9. instanceof Operator
+The instanceof operator is used for type checking. 
+It can be used to test if an object is an instance of a class, 
+a subclass, or an interface. The general format,  
+
+object instance of class/subclass/interface 

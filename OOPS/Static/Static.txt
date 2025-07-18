@@ -1,0 +1,66 @@
+Static means belonging to the CLASS , not to instances (OBJECTS).
+1. Static Variables (Class Variables)
+Shared among all objects of that class.
+Only one copy exists in memory for the whole class, no matter how many objects you create.
+
+2. Static Methods
+->Belong to class, not to objects.
+->Can be called without creating objects.
+->static method-> can only call static method
+->A static method cannot DIRECTLY access non-static variables directly.
+->To access you will need an object
+
+ 3. Static Blocks
+ A static block runs once when the class is loaded.
+ Used to initialize static variables.
+
+ 4. Static Classes (Nested Static Class)
+ A static class can exist inside another class.
+ Cannot access non-static members of the outer class directly.
+
+ | Static Member Type | Belongs To | Accessed Via         | Can Access Instance Members?         |
+| ------------------ | ---------- | -------------------- | ------------------------------------ |
+| Static variable    | Class      | Class name or object | ❌ Only static members                |
+| Static method      | Class      | Class name or object | ❌ Only static members                |
+| Static block       | Class      | Runs automatically   | ❌ Only static members                |
+| Static class       | Class      | Class name           | ❌ Only static members of outer class |
+
+##### WITHOUT STATIC #####
+class Counter {
+    int count = 0; // instance variable
+
+    Counter() {
+        count++;
+        System.out.println(count);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Counter c1 = new Counter(); // prints 1
+        Counter c2 = new Counter(); // prints 1
+        Counter c3 = new Counter(); // prints 1
+    }
+}
+Each time new count gets started
+
+##### WITH STATIC ######
+
+
+class Counter {
+    static int count = 0; // static variable
+
+    Counter() {
+        count++;
+        System.out.println(count);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Counter c1 = new Counter(); // prints 1
+        Counter c2 = new Counter(); // prints 2
+        Counter c3 = new Counter(); // prints 3
+    }
+}
+smae  count increase for each variable

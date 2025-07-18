@@ -1,0 +1,31 @@
+| **Collection Type** | **Implementation** | **Order Maintained?** | **Duplicates Allowed?** | **Nulls Allowed?** | **Thread-Safe?** | **Sorted?** | **Use Case**              |
+| ------------------- | ------------------ | --------------------- | ----------------------- | ------------------ | ---------------- | ----------- | ------------------------- |
+| `List`              | `ArrayList`        | ✅ Yes (insertion)     | ✅ Yes                   | ✅ Yes              | ❌ No             | ❌ No        | Fast access, general list |
+|                     | `LinkedList`       | ✅ Yes (insertion)     | ✅ Yes                   | ✅ Yes              | ❌ No             | ❌ No        | Frequent insert/delete    |
+|                     | `Vector`           | ✅ Yes (insertion)     | ✅ Yes                   | ✅ Yes              | ✅ Yes            | ❌ No        | Legacy thread-safe list   |
+
+| `Set`               | `HashSet`          | ❌ No                  | ❌ No                    | ✅ (1 null)         | ❌ No             | ❌ No        | Fast lookup, no order     |
+|                     | `LinkedHashSet`    | ✅ Yes (insertion)     | ❌ No                    | ✅ (1 null)         | ❌ No             | ❌ No        | Unique elements + order   |
+|                     | `TreeSet`          | ✅ Yes (sorted)        | ❌ No                    | ❌ No               | ❌ No             | ✅ Yes       | Sorted unique collection  |
+
+| `Map`               | `HashMap`          | ❌ No                  | ❌ Keys, ✅ Values        | ✅ (1 null key)     | ❌ No             | ❌ No        | Fast key-value storage    |
+|                     | `LinkedHashMap`    | ✅ Yes (insertion)     | ❌ Keys, ✅ Values        | ✅ (1 null key)     | ❌ No             | ❌ No        | Ordered map               |
+|                     | `TreeMap`          | ✅ Yes (sorted keys)   | ❌ Keys, ✅ Values        | ❌ No               | ❌ No             | ✅ Yes       | Sorted map by keys        |
+
+
+| **Feature**         | **Queue**                                   | **Deque**                                    |
+| ------------------- | ------------------------------------------- | -------------------------------------------- |
+| Meaning             | Single-ended data structure (FIFO)          | Double-ended queue (insert/remove both ends) |
+| Order Maintained?   | ✅ Yes                                       | ✅ Yes                                        |
+| Duplicates Allowed? | ✅ Yes                                       | ✅ Yes                                        |
+| Nulls Allowed?      | Varies (e.g. PriorityQueue ❌, LinkedList ✅) | ❌ No in ArrayDeque, ✅ Yes in LinkedList      |
+| Thread-Safe?        | ❌ No by default                             | ❌ No by default                              |
+| Sorted?             | ✅ Possible (e.g. PriorityQueue)             | ❌ No                                         |
+| Access by Index?    | ❌ No                                        | ❌ No                                         |
+| Use Case            | Task scheduling, message queues, printers   | Implement both queue and stack behaviors     |
+
+(1)Order Maintained
+(2)Duplicates Allowed
+(3)Null Allowed
+(4)Thread Safe
+(5)Sorted

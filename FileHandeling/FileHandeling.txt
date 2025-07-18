@@ -1,0 +1,13 @@
+ (1) Create :
+ File f = new File("test.txt");
+ 
+ | Class              | Key Methods                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| `File`             | `createNewFile()`, `exists()`, `delete()`, `renameTo()`, `length()`, `list()` |
+| `FileWriter`       | `write()`, `close()`                                                          |
+| `BufferedWriter`   | `write()`, `newLine()`, `close()`                                             |
+| `FileReader`       | `read()`, `close()`                                                           |
+| `BufferedReader`   | `readLine()`, `close()`                                                       |
+| `FileOutputStream` | `write()`, `close()`                                                          |
+| `FileInputStream`  | `read()`, `close()`                                                           |
+| `Scanner`          | `hasNextLine()`, `nextLine()`, `close()`                                      |

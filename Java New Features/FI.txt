@@ -1,0 +1,55 @@
+Types of Functional Interfaces in Java
+Java SE 8 included four main kinds of functional interfaces which can be applied in multiple situations as mentioned below:
+
+1.Consumer
+2.Predicate
+3.Function 
+4.Supplier
+
+(1)Consumer Interface -> accept only 1 argument
+                      -> has no return value
+
+    Syntax: Consumer<Integer> consumer = (value) -> System.out.println(value);
+
+    There are also functional variants of the Consumer — DoubleConsumer, IntConsumer, 
+    and LongConsumer. These variants accept primitive values as arguments. 
+
+
+
+(2)Predicate Interface -> boolean value fcn accept only 1 argument                  
+Syntax: 
+
+public interface Predicate<T> {
+
+    boolean test(T t);
+
+}
+Predicate functional interface also has some extensions. 
+These are IntPredicate, DoublePredicate, and LongPredicate.
+
+
+
+
+(3) Function
+A function is a type of functional interface in Java that receives only a single argument 
+and returns a value after the required processing.
+
+Syntax: Function<Integer, Integer> function = (value) -> value * value;
+
+
+
+(4) Supplier
+The Supplier functional interface is also a type of functional interface
+ that does not take any input or argument and yet returns a single output.
+
+Syntax : Supplier<String> supplier = () -> "Hello, World!";
+
+###   Built-In Java Functional Interfaces   ###
+### Since Java SE 1.8 onwards, there are many interfaces that are converted into functional interfaces. All these interfaces are annotated with @FunctionalInterface. These interfaces are as follows:
+
+Runnable: This interface only contains the run() method.
+Comparable: This interface only contains the compareTo() method.
+ActionListener: This interface only contains the actionPerformed() method.
+Callable: This interface only contains the call() method.
+
+

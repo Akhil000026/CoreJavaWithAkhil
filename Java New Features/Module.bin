@@ -1,0 +1,11 @@
+Before Java 9:
+
+Code was organized into:
+
+Classes → methods
+
+Packages → groups of classes
+
+But no higher-level grouping → huge applications became hard to manage.
+
+From Java 9, we have the Java Platform Module System (JPMS).

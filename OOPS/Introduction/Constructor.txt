@@ -1,0 +1,20 @@
+Each time an object is created using a new() keyword, at least one constructor
+ (it could be the default constructor) is invoked to assign 
+ initial values to the data members of the same class. 
+
+Types of Constructors in Java
+
+1. Default Constructor in Java
+A constructor that has no parameters is known as default constructor
+
+2. Parameterized Constructor in Java
+A constructor that has parameters is known as parameterized constructor
+
+3. Copy Constructor in Java
+Unlike other constructors copy constructor is passed with another object 
+which copies the data available from the passed object to the newly created object.
+
+Even though a subclass inherits all public and protected fields and methods of
+the parent class, it does not inherit constructors. However, the subclass can
+call a superclass’s constructor using the super() keyword, typically as the
+first line of its own constructor.
